@@ -122,6 +122,7 @@ router.post('/adicionar', async (req, res) => {
             idPessoa: req.body.idPessoa,
             ativo: true,
             lojaDisponivel: false,
+            franquia: req.body.franquia,
             chaveIdentificacao: chavesArray,
             chaveFormatada: chavesFormatadasArray,
             idEndereco: req.body.idEndereco,
