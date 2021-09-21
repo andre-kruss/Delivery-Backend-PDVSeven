@@ -123,6 +123,7 @@ router.post('/adicionar', async (req, res) => {
             ativo: true,
             lojaDisponivel: false,
             franquia: req.body.franquia,
+            pedidoValorMinimo: req.body.pedidoValorMinimo,
             chaveIdentificacao: chavesArray,
             chaveFormatada: chavesFormatadasArray,
             idEndereco: req.body.idEndereco,

@@ -10,6 +10,7 @@ const EsquemaLoja = new mongoose.Schema({
     chaveIdentificacao: [String],
     chaveFormatada: [String],
     telefones: [String],
+    pedidoValorMinimo: Number,
     entregaBairro: [
       {
         bairro: String,
