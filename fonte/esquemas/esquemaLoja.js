@@ -6,12 +6,14 @@ const EsquemaLoja = new mongoose.Schema({
     idPessoa: String,
     ativo: Boolean,
     lojaDisponivel: Boolean,
+    franquia: String,
     chaveIdentificacao: [String],
     chaveFormatada: [String],
     telefones: [String],
     entregaBairro: [
       {
         bairro: String,
+        cidade: String,
         valor: Number,
         areaRecusada: Boolean
       }
